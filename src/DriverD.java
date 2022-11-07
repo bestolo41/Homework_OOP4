@@ -8,9 +8,21 @@ public class DriverD<D extends Bus> extends Driver{
     }
 
     public void participation(D car) {
-        System.out.println("Водитель " + getName() + " управляет грузовиком " + car.getBrand() + " " + car.getModel() + " и участвует в заезде");
+        System.out.println("Водитель " + getName() + " управляет автобусом " + car.getBrand() + " " + car.getModel() + " и участвует в заезде");
+    }
+    public void startMotion(D car) {
+        System.out.println("Водитель " + getName() + " нажимает на газ автобуса " + car.getBrand() + " " + car.getModel());
     }
 
+
+    public void endNotion(D car) {
+        System.out.println("Водитель " + getName() + " нажимает на газ автобуса " + car.getBrand() + " " + car.getModel());
+    }
+
+
+    public void refueling(D car) {
+        System.out.println("Водитель " + getName() + " заправляет автобус " + car.getBrand() + " " + car.getModel());
+    }
 
     public char getCategory() {
         return category;

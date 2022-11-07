@@ -16,6 +16,20 @@ public class DriverB<D extends PassengerCar> extends Driver {
         return category;
     }
 
+    public void startMotion(D car) {
+        System.out.println("Водитель " + getName() + " нажимает на газ автомобиля " + car.getBrand() + " " + car.getModel());
+    }
+
+
+    public void endNotion(D car) {
+        System.out.println("Водитель " + getName() + " нажимает на газ автомобиля " + car.getBrand() + " " + car.getModel());
+    }
+
+
+    public void refueling(D car) {
+        System.out.println("Водитель " + getName() + " заправляет автомобиль " + car.getBrand() + " " + car.getModel());
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

@@ -10,6 +10,19 @@ public class DriverC<D extends Truck> extends Driver {
     public void participation(D car) {
         System.out.println("Водитель " + getName() + " управляет грузовиком " + car.getBrand() + " " + car.getModel() + " и участвует в заезде");
     }
+    public void startMotion(D car) {
+        System.out.println("Водитель " + getName() + " нажимает на газ грузовика " + car.getBrand() + " " + car.getModel());
+    }
+
+
+    public void endNotion(D car) {
+        System.out.println("Водитель " + getName() + " нажимает на газ грузовика " + car.getBrand() + " " + car.getModel());
+    }
+
+
+    public void refueling(D car) {
+        System.out.println("Водитель " + getName() + " заправляет грузовик " + car.getBrand() + " " + car.getModel());
+    }
 
     public char getCategory() {
         return category;

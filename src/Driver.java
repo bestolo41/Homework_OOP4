@@ -4,25 +4,13 @@ public abstract class Driver {
     private String name;
     private int experience;
 
+
     public Driver(String name, int experience) {
         setName(name);
         setExperience(experience);
     }
 
 
-    public void startMotion(Car car) {
-        System.out.println("Водитель " + getName() + " нажимает на газ автомобиля " + car.getBrand() + " " + car.getModel());
-    }
-
-
-    public void endNotion(Car car) {
-        System.out.println("Водитель " + getName() + " нажимает на газ автомобиля " + car.getBrand() + " " + car.getModel());
-    }
-
-
-    public void refueling(Car car) {
-        System.out.println("Водитель " + getName() + " заправляет автомобиль " + car.getBrand() + " " + car.getModel());
-    }
     public String getName() {
         return name;
     }
